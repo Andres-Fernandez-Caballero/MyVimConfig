@@ -1,6 +1,6 @@
 " Set compatibility to Vim only.
 set nocompatible
-"//  set nolist
+set nolist
 set rnu
 " Helps force plug-ins to load correctly when it is turned back on below.
 filetype off
@@ -91,13 +91,17 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-
 Plug 'pangloss/vim-javascript'    " JavaScript support
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'vim-airline/vim-airline'
+
+"----------------------------------------------------"
+"------------------- Themes -------------------------"
+"----------------------------------------------------"
 Plug 'dracula/vim', {'as' : 'dracula' }
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'sickill/vim-monokai'
 call plug#end()
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 
@@ -108,9 +112,14 @@ let g:coc_global_extensions = [ 'coc-tsserver' ]
 " | 'darker' | 'default-community' | 'palenight-community' | 'ocean-community'
 " | 'lighter-community' | 'darker-community'
 
-" let g:material_theme_style = 'ocean'
+let g:material_theme_style = 'ocean'
 
-colorscheme dracula
+set ruler
+let no_buffers_menu=1
+set t_Co=256
+
+
+colorscheme monokai
 
 let g:airline_powerline_fonts = 1
 " GoTo code navigation.
