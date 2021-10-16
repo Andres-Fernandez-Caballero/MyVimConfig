@@ -161,3 +161,12 @@ nmap <silent> gi <Plug>(coc-implementation)
 
 nmap <silent> gr <Plug>(coc-references)
 :imap ii <Esc>
+
+Yo uso esto en mi .vimrc: 
+
+ 
+" Window Navigation with Ctrl-[hjkl]
+noremap <C-J> <C-W>j
+noremap <C-K> <C-W>k
+noremap <C-H> <C-W>h
+noremap <C-L> <C-W>l
