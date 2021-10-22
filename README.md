@@ -9,3 +9,18 @@ Configuracion de Vim simple para programar
 * NERDTree (siempre activo)
 * Intelisense para javascript y Typescript
 * Varios temas como Dracula y MaterialDesign
+
+### Instalacion
+
+#### Windows
+En la carpeta de Usuario (su carpeta personal, donde estan las carpetas Download, Documents, etc) clone o descargue el repositorio
+es obligatorio que se guarde con el nombre .vim
+
+En un terminal de comandos inicie Vim y ejecute el comando `vim`, esto iniciara el programa y descargara e instalara automaticamente todas las librerias necesarias.
+
+### Documentacion
+
+#### NERDTree
+* F2 -> mostrar/ ocultar NERDTree
+* CTRL + h -> desplazarse al NERDTree
+* m -> en la ventana del NERDTree abre el menu para crear archivos y carpetas
