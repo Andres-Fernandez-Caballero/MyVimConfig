@@ -17,7 +17,8 @@ En la carpeta de Usuario (su carpeta personal, donde estan las carpetas Download
 es obligatorio que se guarde con el nombre .vim
 
 En un terminal de comandos inicie Vim y ejecute el comando `vim`, esto iniciara el programa y descargara e instalara automaticamente todas las librerias necesarias.
-
+En caso de no instalarse las librerias automaticamente ejecute dentro de vim el
+comando :PlugInstall.
 ### Documentacion
 
 #### NERDTree
